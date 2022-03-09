@@ -1,16 +1,8 @@
-module example.com/termitarium
+module example.com/Db
 
 go 1.17
 
-require github.com/gorilla/mux v1.8.0
-
-replace example.com/Db => ./database
-
-require (
-	example.com/Db v0.0.0-00010101000000-000000000000
-	github.com/joho/godotenv v1.4.0
-	go.mongodb.org/mongo-driver v1.8.4
-)
+require go.mongodb.org/mongo-driver v1.8.4
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect
